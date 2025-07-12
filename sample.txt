@@ -1,0 +1,4 @@
+This is a sample text file.
+You can upload this file into the Streamlit app
+to see how it reads and displays text content.
+Streamlit makes web apps easy!
