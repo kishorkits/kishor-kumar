@@ -38,7 +38,7 @@ model.fit(X, y)
 
 # Predict next closing price
 latest_price = data['Close'].iloc[-1]
-predicted_price = model.predict([[latest_price]])[0][0]
+predicted_price = model.predict(np.array([latest_price]).reshape(1, -1))[0][0]
 
 st.subheader("📊 Prediction Result")
 st.write(f"🔹 Last Closing Price: ₹{latest_price:.2f}")
